@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #333;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Game Grid */
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+/* Cards */
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card.matched {
+  background-color: #4CAF50 !important;
+  color: white;
+  cursor: default;
+  transform: scale(1);
+}
+
+/* Score & Controls */
+.startMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  background: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+#score, #timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Button */
+#startbtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: #ff7eb3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#startbtn:hover {
+  background: #ff5277;
+}
